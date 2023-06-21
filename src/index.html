@@ -7,6 +7,9 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
+    <nav>
+        <div id="players" class="players">No Game Loaded</div>
+    </nav>
     <div class="board">
         <div id = "row1" class="roweven">
             <div id = "a8" class="spot"></div>
@@ -91,10 +94,18 @@
     </div>
 
     <div class="buttontray">
-        <button onclick="playGame(game, 250)">Play Game</button>
-        <button onclick="resetBoard()">Reset Board</button>
+        <input type="file" id="gamefile" accept=".pgn">
+        <div class="gamecontrolbuttons">
+            <button id="back"><</button>
+            <button id="play">&#x23F5</button>
+            <button id="pause">&#x23F8</button>
+            <button id="forward">></button>
+        </div>
+    
+        <button id = "reset">Reset Board</button>
     </div>
 </body>
 
-<script src="script.js"></script>
+<script src="main.js"></script>
+
 </html>

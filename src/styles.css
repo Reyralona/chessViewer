@@ -1,16 +1,17 @@
-
-:root{
-    --evenColor: #A3A3A3;
-    --oddColor: #424242; 
+:root {
+    --evenColor: #cfbca4;
+    --oddColor: #4e382e;
     --boardFontSize: 35px;
     --boardFontFamily: monospace;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
-body{
-   
+
+body {
+
     background-color: rgb(25, 25, 25);
     width: 100vw;
     height: 100vh;
@@ -18,9 +19,17 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 25px;
 }
-button{
+
+nav{
+    color: white;
+    font-size: 20px;
+    font-family: monospace;
+    
+}
+
+button {
     font-size: 20px;
     padding: 20px;
     background-color: #A3A3A3;
@@ -29,15 +38,50 @@ button{
     border-radius: 10px;
     font-family: monospace;
 }
-button:hover{
+
+button:hover {
     color: rgb(183, 183, 183);
     cursor: pointer;
 }
-.buttontray{
+
+.gamecontrolbuttons{
+    display: flex;
+    gap: 10px;
+}
+.gamecontrolbuttons>button{
+    font-weight: bolder;
+}
+
+#gamefile {
+    visibility: hidden;
+    position: relative;
+}
+
+#gamefile::before {
+    background-color: #A3A3A3;
+    border-radius: 10px;
+    font-family: monospace;
+    visibility: visible;
+    content: 'Select a .pgn file';
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    display: flex;
+    border-radius: 10px;
+    font-size: 20px;
+}
+#gamefile:hover{
+    color: rgb(183, 183, 183);
+    cursor: pointer;
+}
+
+.buttontray {
     display: flex;
     gap: 50px;
 }
-.board{
+
+.board {
     font-family: var(--boardFontFamily);
     font-size: var(--boardFontSize);
     display: flex;
@@ -48,12 +92,16 @@ button:hover{
     user-select: none;
     /* border: 3px solid black; */
 }
-.roweven, .rowodd{
+
+.roweven,
+.rowodd {
     display: flex;
     width: 100%;
     height: calc(100% / 8);
 }
-.roweven>.spot, .rowodd>.spot{
+
+.roweven>.spot,
+.rowodd>.spot {
     height: 100px;
     width: 100px;
 }
@@ -64,22 +112,25 @@ button:hover{
     justify-content: center;
 }
 
-.spot>img{
+.spot>img {
     width: 100px;
     height: 100px;
+    position: relative;
 }
 
 
-.roweven>.spot:nth-child(even){
+.roweven>.spot:nth-child(even) {
     background-color: var(--oddColor);
 }
-.roweven>.spot:nth-child(odd){
+
+.roweven>.spot:nth-child(odd) {
     background-color: var(--evenColor);
 }
 
-.rowodd>.spot:nth-child(odd){
+.rowodd>.spot:nth-child(odd) {
     background-color: var(--oddColor);
 }
-.rowodd>.spot:nth-child(even){
+
+.rowodd>.spot:nth-child(even) {
     background-color: var(--evenColor);
 }

@@ -1,0 +1,30 @@
+[Event "vs Computer"]
+[Site "Chess.com"]
+[Date "2023.06.20"]
+[Round "-"]
+[White "reypetrooccos"]
+[Black "Junior-BOT"]
+[Result "1-0"]
+[CurrentPosition "7Q/8/1p6/p7/P6Q/1P1B2Bk/3P1P1P/1R3K2 b - - 0 41"]
+[Timezone "UTC"]
+[ECO "C23"]
+[ECOUrl "https://www.chess.com/openings/Bishops-Opening"]
+[UTCDate "2023.06.20"]
+[UTCTime "03:42:49"]
+[WhiteElo "643"]
+[BlackElo "1300"]
+[TimeControl "1/0"]
+[Termination "reypetrooccos won by checkmate"]
+[StartTime "03:42:49"]
+[EndDate "2023.06.20"]
+[EndTime "04:30:31"]
+[Link "https://www.chess.com/game/computer/74187575"]
+
+1. e4 e5 2. Bc4 Qh4 3. Qe2 Bc5 4. Nf3 Qf6 5. Nc3 a6 6. a4 d6 7. b3 Nd7 8. Ba3
+Qg6 9. Nd5 Qxg2 10. Nxc7+ Kf8 11. Rg1 Nb6 12. Rxg2 Bh3 13. Kf1 Rc8 14. Nd5 a5
+15. Nxb6 Bxb6 16. Bxd6+ Ne7 17. Ng5 Bd4 18. Rb1 Kg8 19. Nxh3 Ng6 20. Qg4 Re8 21.
+c3 h5 22. Qd7 Kh7 23. cxd4 Rhg8 24. dxe5 b6 25. Bd3 Rh8 26. e6 Rxe6 27. e5 Rhe8
+28. Ng5+ Kg8 29. Nxe6 Rxe6 30. Qd8+ Kh7 31. Rxg6 Rxg6 32. Qd7 Kh6 33. Qxf7 Rg4
+34. e6 Rg5 35. e7 g6 36. e8=Q Rg4 37. Qh8+ Kg5 38. Qxg6+ Kh4 39. Bg3+ Kh3 40.
+Qgxh5+ Rh4 41. Qxh4# {[%c_effect
+f1;square;f1;type;Winner,h3;square;h3;type;CheckmateBlack]} 1-0
